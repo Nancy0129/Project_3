@@ -6,4 +6,4 @@ WORKDIR /viz
 
 RUN pip install -r requirements.txt
 
-ENTRYPOINT ["python","app.py"]
+ENTRYPOINT ["python","app.py","--port","5101","--host=0.0.0.0"]
